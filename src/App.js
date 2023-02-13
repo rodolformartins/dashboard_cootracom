@@ -1,9 +1,25 @@
+import { useState } from 'react';
+import Sidebar from './components/sidebar/Sidebar';
 import './App.css';
 
-function App() {
+
+const App = () => {
+
+  const [sideBarOpen, setSideBarOpen] = useState(false);
+
+  const openSideBar = () => {
+    setSideBarOpen(true);
+  };
+
+  const closeSideBar = () => {
+    setSideBarOpen(false);
+  };
+
+  
+
   return (
-    <div className="App">
-      <h1>Hello world!</h1>
+    <div className="container">
+      <Sidebar sidebarOpen={sideBarOpen} closeSideBar={closeSideBar} />
     </div>
   );
 }
