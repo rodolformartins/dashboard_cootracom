@@ -70,8 +70,6 @@ const Sidebar = ({ sidebarOpen , closeSideBar}) => {
                 </div>
 
             </div>
-
-    
       </div>
     )
 }
